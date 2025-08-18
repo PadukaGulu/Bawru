@@ -1,24 +1,138 @@
 <html>
 <head>
 <title>Punya Barraa</title>
+<style>
+    body {
+        background-image: url(Tribbie2.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        color: white;
+        margin: 0;
+    }
+
+   
+    .content {
+        padding-bottom: 160px; 
+    }
+
+    button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    .hobi {
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 0 0 15px black;
+    }
+
+    .texthobi {
+       font-size: 28px;
+       color: white;    
+       font-family: Consolas, monospace; 
+    }
+
+    .link {
+        background: rgba(0,0,0,0.6);
+        padding: 15px 20px;
+        border-radius: 12px;
+        width: auto;         
+        max-width: 250px;  
+        
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+    }
+
+    .nav {
+        margin: 0;
+        font-size: 18px;
+        font-family: Consolas, monospace; 
+        line-height: 1.6; 
+    }
+
+    .nav a {
+        color: cyan;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+        color: #00ffff; 
+    }
+
+   .judul {
+       font-size: 40px;
+       color: black;    
+       font-family: Consolas, monospace; 
+   }
+
+    h2, h3 {
+        text-align: center;
+    }
+</style>
 </head>
-</html>
 
 <body>
-<marquee><font size="20">Selamat Datang di Halaman Hobi</font size="20"></marquee>
+<div class="content">
+    <marquee><div class="judul">Selamat Datang di Halaman Hobi</div></marquee>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Home</font size="5">
-<br>
-<font size="4"><a href="index.html">Pergi ke halaman Home</a></font size="4">
+    <div class="hobi">
+        <h2>🎸 Hobi Saya</h2>
+        <h3>Main Gitar</h3>
+        <p>
+            Sejak masa pandemi Covid-19 ketika saya masih kelas 1 SMP, saya mulai tertarik belajar gitar. 
+            Awalnya hanya belajar kunci dasar seperti A, B, C, D, E, F, dan G. Karena belajar secara otodidak, 
+            saya sering menonton channel YouTube <i>Yunus Guitarist</i> untuk mempelajari teknik petikan. 
+            Sampai sekarang saya masih bermain gitar di waktu senggang. 
+            Lagu yang paling sering saya mainkan adalah <b>"Tanpa Cinta"</b> dari Tiara Andini.
+        </p>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Biodata</font size="5">
-<br>
-<font size="4"><a href="Biodata.html">Pergi ke halaman Biodata</a></font size="4">
+        <h3>Main Game (HSR & ZZZ)</h3>
+        <p>
+            Saya mulai bermain <b>Honkai: Star Rail</b> sejak awal rilis, meski sempat berhenti 3 bulan setelahnya. 
+            Pada November 2024, saya kembali bermain karena teman sebangku saya, Yusuf, juga main lagi. 
+            Sekarang saya aktif dengan ID: <b>837270357</b> (Nick: <b>k.J.Y</b>).
+        </p>
+        <p>
+            Untuk <b>Zenless Zone Zero</b>, saya juga main sejak awal rilis tetapi sempat berhenti setelah 1 bulan. 
+            Saya kembali pada Desember 2024 karena tertarik dengan karakter baru <b>Miyabi</b>. 
+            ID saya: <b>1300484600</b> (Nick: <b>PadukaGulu</b>).
+        </p>
+    </div>
+</div>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Galeri</font size="5">
-<br>
-<font size="4"><a href="Galeri.html">Pergi ke halaman Galeri</a></font size="4">
+<div class="link">
+    <div class="nav">
+        <p><a href="Home.html">Pergi ke halaman Home</a></p>
+        <p><a href="Biodata.html">Pergi ke halaman Biodata</a></p>
+        <p><a href="Galeri.html">Pergi ke halaman Galeri</a></p>
+    </div>
+</div>
+
+<audio id="bgm" src="LantarGT.mp3" loop></audio>
+<button onclick="document.getElementById('bgm').play()">Start Musik</button>
 
 </body>
-
 </html>
