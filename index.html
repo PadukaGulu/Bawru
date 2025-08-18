@@ -9,15 +9,17 @@
 body {
     margin: 0;
     height: 100vh;
-    background: url("Cyrene.jpg") repeat-x;
-    background-size: 100%;
+    background: url("Cyrene.jpg") repeat-x center center;
+    background-size: 135%;
+    background-position: center center; 
     animation: goyang 1s ease-in-out infinite alternate;
-  }
+    padding-bottom: 120px;
 
-  @keyframes goyang {
-    from { background-position: 0 0; }
-    to   { background-position: 5px 0; }
-  }
+@keyframes goyang {
+    from { background-position: center center; }
+    to   { background-position: calc(50% + 5px) center; } 
+}
+
   button {
       position: fixed;
       bottom: 20px;
@@ -33,42 +35,100 @@ body {
     button:hover {
       background: #555;
     }
+   .home {
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 0 0 15px black;
+
+    }
+   .texthome {
+       font-size: 28px;
+       color: white;    
+       font-family: Arial, sans-serif;
+   }
+
+.link {
+    background: rgba(0,0,0,0.6);
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: auto;         
+    max-width: 250px;  
+    
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav {
+    margin: 0;
+    font-size: 18px;
+    font-family: Consolas, monospace;
+    line-height: 1.6; 
+}
+
+.nav a {
+    color: cyan;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #00ffff; 
+}
+
+   .judul {
+       font-size: 40px;
+       color: black;    
+       font-family: Consolas, monospace; 
+   }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+
 </style>
 
 
-<marquee><font size="7">Selamat Datang di Halaman Home</font></marquee>
+<marquee><div class="judul">Selamat Datang di Halaman Home</div></marquee>
 
 <center>
   <font size="6">HTML ini punya Muhammad Athaya Al Barraa</font>
 </center>
 <br>
 
-<font size="5">
-<p align="justify">
+<div class="home">
+<div style="margin:20px;">
+<div class="texthome">
 Selamat datang di website pribadi saya. Website ini saya buat sebagai media untuk memperkenalkan diri saya dengan cara yang sederhana namun menarik. 
 Melalui website ini, saya ingin berbagi sedikit tentang siapa saya, apa saja yang saya sukai, dan hal-hal kecil yang menjadi bagian dari kehidupan saya sehari-hari.
-</p>
+
 
 <p align="justify">
 Di dalam website ini, kalian akan menemukan beberapa halaman penting. Pada bagian Biodata, kalian bisa mengenal saya lebih dekat melalui informasi dasar tentang diri saya. 
 Lalu di halaman Hobi, saya ceritakan berbagai kegiatan yang sering saya lakukan saat waktu luang. 
 Terakhir, di halaman Galeri, kalian bisa melihat kumpulan gambar atau foto pilihan yang saya tampilkan khusus di sini.
-</p>
-</font>
+
+</div>
+</div>
+</div
 
 <br><br>
-
-<font size="4">
-<p>Tekan tombol di bawah untuk pergi ke halaman Biodata</p>
-<a href="Biodata.html">Pergi ke halaman Biodata</a>
-
-<p>Tekan tombol di bawah untuk pergi ke halaman Hobi</p>
-<a href="Hobi.html">Pergi ke halaman Hobi</a>
-
-<p>Tekan tombol di bawah untuk pergi ke halaman Galeri</p>
-<a href="Galeri.html">Pergi ke halaman Galeri</a>
-</font>
-
+<div class="link">
+<div class="nav">
+<p><a href="Biodata.html">Pergi ke halaman Biodata</a></p>
+<p><a href="Hobi.html">Pergi ke halaman Hobi</a></p>
+<p><a href="Galeri.html">Pergi ke halaman Galeri</a></p>
+</div>
+</div>
 <br><br>
 
 
