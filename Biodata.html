@@ -1,33 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Punya Barraa</title>
-</head>
-</html>
-
-<body>
 <style>
-
-
     body {
-  margin: 0;
-  height: 100vh;
-  background: url("Hyacine4.jpg") no-repeat center;
-  background-size: 120% 120%;
-  animation: gerakfoto 5s linear infinite alternate;
-}
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: url("Hyacine4.jpg") no-repeat center;
+      background-size: 120% 120%;
+      animation: gerakfoto 5s linear infinite alternate;
+    }
 
-@keyframes gerakfoto {
-  from { background-position: 0% center; }
-  to   { background-position: 20% center; }
-}
+    @keyframes gerakfoto {
+      from { background-position: 0% center; }
+      to   { background-position: 20% center; }
+    }
 
+    button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
 
-
+    button:hover {
+      background: #555;
+    }
 </style>
+</head>
+<body>
 
-<marquee><font size="20">Selamat Datang di Halaman Biodata</font size="20"></marquee>
-    <div style="position:fixed; left:10px;">
-<pre><font size="7">
+
+<marquee><font size="20">Selamat Datang di Halaman Biodata</font></marquee>
+
+
+<div style="margin:20px;">
+<pre><font size="6">
 Nama           : Muhammad Athaya Al Barraa
 Nama Panggilan : Barraa
 Jenis Kelamin  : Pria
@@ -36,46 +50,27 @@ Agama          : Islam
 Pekerjaan      : Siswa
 Nomor Telepon  : 081213971231
 Email          : athayabara1@gmail.com
+</font></pre>
 </div>
-</font size="7">
-</pre>
 
 
-<div style="position:fixed; bottom:40px; left:10px;">
+<br><br>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Home</font size="5">
-<br>
-<font size="4"><a href="index.html">Pergi ke halaman Home</a></font size="4">
+<font size="4">
+<p>Tekan tombol di bawah untuk pergi ke halaman Home</p>
+<a href="Home.html">Pergi ke halaman Home</a>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Hobi</font size="5">
-<br>
-<font size="4"><a href="Hobi.html">Pergi ke halaman Hobi</a></font size="4">
+<p>Tekan tombol di bawah untuk pergi ke halaman Hobi</p>
+<a href="Hobi.html">Pergi ke halaman Hobi</a>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Galeri</font size="5">
-<br>
-<font size="4"><a href="Galeri.html">Pergi ke halaman Galeri</a></font size="4">
-</div>
+<p>Tekan tombol di bawah untuk pergi ke halaman Galeri</p>
+<a href="Galeri.html">Pergi ke halaman Galeri</a>
+</font>
+
+<br><br>
 
 <audio id="bgm" src="ProiProi.mp3" loop></audio>
+<button onclick="document.getElementById('bgm').play()">Start Musik</button>
 
-<button onclick="document.getElementById('bgm').play()" 
-        style="position:fixed; bottom:20px; right:20px;">
-  Start Musik
-</button>
-    
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
