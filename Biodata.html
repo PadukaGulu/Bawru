@@ -7,17 +7,19 @@
       margin: 0;
       height: 100vh;
       font-family: Arial, sans-serif;
-      background: url("Hyacine4.jpg") no-repeat center;
-      background-size: 120% 120%;
+      background: url("Hyacine4.jpg") no-repeat center center;
+      background-size: 120%;
+      backgorund-position: center center;
       animation: gerakfoto 5s linear infinite alternate;
+      padding-bottom: 120px;
     }
 
     @keyframes gerakfoto {
-      from { background-position: 0% center; }
+      from { background-position: center center; }
       to   { background-position: 20% center; }
     }
 
-    button {
+   button {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -32,16 +34,77 @@
     button:hover {
       background: #555;
     }
+   .biodata {
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 0 0 15px black;
+
+    }
+   .textbiodata {
+       font-size: 28px;
+       color: white;    
+       font-family: Consolas, monospace; 
+   }
+
+.link {
+    background: rgba(0,0,0,0.6);
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: auto;         
+    max-width: 250px;  
+    
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.nav {
+    margin: 0;
+    font-size: 18px;
+    font-family: Consolas, monospace;
+    line-height: 1.6; 
+}
+
+.nav a {
+    color: cyan;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #00ffff; 
+}
+
+   .judul {
+       font-size: 40px;
+       color: black;    
+       font-family: Consolas, monospace; 
+   }
+
+    h2, h3 {
+        text-align: center;
+    }
+
+
 </style>
 </head>
 <body>
 
 
-<marquee><font size="20">Selamat Datang di Halaman Biodata</font></marquee>
+<marquee><div class="judul">Selamat Datang di Halaman Biodata</div></marquee>
 
 
+<div class="biodata">
 <div style="margin:20px;">
-<pre><font size="6">
+<pre class="textbiodata">
 Nama           : Muhammad Athaya Al Barraa
 Nama Panggilan : Barraa
 Jenis Kelamin  : Pria
@@ -50,23 +113,19 @@ Agama          : Islam
 Pekerjaan      : Siswa
 Nomor Telepon  : 081213971231
 Email          : athayabara1@gmail.com
-</font></pre>
+</pre>
 </div>
+</div
 
 
 <br><br>
-
-<font size="4">
-<p>Tekan tombol di bawah untuk pergi ke halaman Home</p>
-<a href="index.html">Pergi ke halaman Home</a>
-
-<p>Tekan tombol di bawah untuk pergi ke halaman Hobi</p>
-<a href="Hobi.html">Pergi ke halaman Hobi</a>
-
-<p>Tekan tombol di bawah untuk pergi ke halaman Galeri</p>
-<a href="Galeri.html">Pergi ke halaman Galeri</a>
-</font>
-
+<div class="link">
+<div class="nav">
+<p><a href="Home.html">Pergi ke halaman Home</a></p>
+<p><a href="Hobi.html">Pergi ke halaman Hobi</a></p>
+<p><a href="Galeri.html">Pergi ke halaman Galeri</a></p>
+</div>
+</div>
 <br><br>
 
 <audio id="bgm" src="ProiProi.mp3" loop></audio>
@@ -74,4 +133,3 @@ Email          : athayabara1@gmail.com
 
 </body>
 </html>
-
