@@ -1,18 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Punya Barraa</title>
+<title>Punya Barraa - Hobi</title>
 <style>
     body {
-        background-image: url(Tribbie2.jpeg);
-        background-attachment: fixed;
+        background: url("Tribbie2.jpeg") no-repeat center center fixed;
         background-size: cover;
-        background-repeat: no-repeat;
         font-family: Arial, sans-serif;
         color: white;
         margin: 0;
     }
 
-   
     .content {
         padding-bottom: 160px; 
     }
@@ -27,6 +25,7 @@
       background: #333;
       color: #fff;
       cursor: pointer;
+      transition: 0.3s;
     }
 
     button:hover {
@@ -34,18 +33,27 @@
     }
 
     .hobi {
-        background: rgba(0,0,0,0.6);
-        padding: 20px;
-        border-radius: 15px;
-        width: 80%;
-        margin: 20px auto;
+        background: rgba(0,0,0,0.7);
+        padding: 25px;
+        border-radius: 18px;
+        width: 85%;
+        margin: 30px auto;
         box-shadow: 0 0 15px black;
+        backdrop-filter: blur(5px);
+        animation: fadein 1s ease;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(15px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
     .texthobi {
-       font-size: 28px;
+       font-size: 20px;
        color: white;    
        font-family: Consolas, monospace; 
+       line-height: 1.7;
+       text-align: justify;
     }
 
     .link {
@@ -54,12 +62,10 @@
         border-radius: 12px;
         width: auto;         
         max-width: 250px;  
-        
         position: fixed;
         bottom: 20px;
         left: 20px;
         margin: 0;
-
         box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
         backdrop-filter: blur(5px);
     }
@@ -82,26 +88,39 @@
         color: #00ffff; 
     }
 
-   .judul {
-       font-size: 40px;
-       color: black;    
+    .judul {
+       font-size: 38px;
        font-family: Consolas, monospace; 
-   }
+       animation: warna 2s infinite alternate;
+    }
 
-    h2, h3 {
+    @keyframes warna {
+      from { color: cyan; }
+      to   { color: magenta; }
+    }
+
+    h2 {
         text-align: center;
+        color: #00ffff;
+    }
+
+    h3 {
+        color: #ffccff;
     }
 </style>
 </head>
 
 <body>
 <div class="content">
-    <marquee><div class="judul">Selamat Datang di Halaman Hobi</div></marquee>
+    <marquee behavior="alternate" scrollamount="7">
+        <div class="judul">🎶 Selamat Datang di Halaman Hobi 🎮</div>
+    </marquee>
 
     <div class="hobi">
         <h2>🎸 Hobi Saya</h2>
+
         <h3>Main Gitar</h3>
-        <p>
+        <p class="texthobi">
             Sejak masa pandemi Covid-19 ketika saya masih kelas 1 SMP, saya mulai tertarik belajar gitar. 
             Awalnya hanya belajar kunci dasar seperti A, B, C, D, E, F, dan G. Karena belajar secara otodidak, 
             saya sering menonton channel YouTube <i>Yunus Guitarist</i> untuk mempelajari teknik petikan. 
@@ -110,12 +129,12 @@
         </p>
 
         <h3>Main Game (HSR & ZZZ)</h3>
-        <p>
+        <p class="texthobi">
             Saya mulai bermain <b>Honkai: Star Rail</b> sejak awal rilis, meski sempat berhenti 3 bulan setelahnya. 
             Pada November 2024, saya kembali bermain karena teman sebangku saya, Yusuf, juga main lagi. 
             Sekarang saya aktif dengan ID: <b>837270357</b> (Nick: <b>k.J.Y</b>).
         </p>
-        <p>
+        <p class="texthobi">
             Untuk <b>Zenless Zone Zero</b>, saya juga main sejak awal rilis tetapi sempat berhenti setelah 1 bulan. 
             Saya kembali pada Desember 2024 karena tertarik dengan karakter baru <b>Miyabi</b>. 
             ID saya: <b>1300484600</b> (Nick: <b>PadukaGulu</b>).
@@ -136,4 +155,3 @@
 
 </body>
 </html>
-
