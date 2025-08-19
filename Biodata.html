@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Punya Barraa</title>
+<title>Punya Barraa - Biodata</title>
 <style>
     body {
       margin: 0;
       height: 100vh;
       font-family: Arial, sans-serif;
-      background: url("Hyacine4F.jpg") no-repeat center center;
+      background: url("Hyacine4.jpg") no-repeat center center;
       background-size: 120%;
-      backgorund-position: center center;
-      animation: gerakfoto 5s linear infinite alternate;
+      background-position: center center;
+      animation: gerakfoto 8s linear infinite alternate;
       padding-bottom: 120px;
     }
 
@@ -19,7 +19,7 @@
       to   { background-position: 20% center; }
     }
 
-   button {
+    button {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -34,104 +34,110 @@
     button:hover {
       background: #555;
     }
-   .biodata {
+
+    .biodata {
         background: rgba(0,0,0,0.6);
         padding: 20px;
         border-radius: 15px;
         width: 80%;
+        max-width: 600px;
         margin: 20px auto;
         box-shadow: 0 0 15px black;
-
+        backdrop-filter: blur(5px);
+        animation: muncul 1s ease;
     }
-   .textbiodata {
-       font-size: 28px;
+
+    @keyframes muncul {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .textbiodata {
+       font-size: 20px;
        color: white;    
        font-family: Consolas, monospace; 
-   }
-
-.link {
-    background: rgba(0,0,0,0.6);
-    padding: 15px 20px;
-    border-radius: 12px;
-    width: auto;         
-    max-width: 250px;  
-    
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
-    backdrop-filter: blur(5px);
-}
-
-.nav {
-    margin: 0;
-    font-size: 18px;
-    font-family: Consolas, monospace;
-    line-height: 1.6; 
-}
-
-.nav a {
-    color: cyan;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-    color: #00ffff; 
-}
-
-   .judul {
-       font-size: 40px;
-       color: black;    
-       font-family: Consolas, monospace; 
-   }
-
-    h2, h3 {
-        text-align: center;
+       line-height: 1.8;
     }
 
+    .textbiodata td {
+      padding: 6px 12px;
+    }
+
+    .link {
+        background: rgba(0,0,0,0.6);
+        padding: 15px 20px;
+        border-radius: 12px;
+        width: auto;         
+        max-width: 250px;  
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+    }
+
+    .nav {
+        margin: 0;
+        font-size: 18px;
+        font-family: Consolas, monospace;
+        line-height: 1.6; 
+    }
+
+    .nav a {
+        color: cyan;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+        color: #00ffff; 
+    }
+
+    .judul {
+       font-size: 38px;
+       font-family: Consolas, monospace;
+       animation: warna 2s infinite alternate;
+    }
+
+    @keyframes warna {
+      from { color: cyan; }
+      to   { color: magenta; }
+    }
 
 </style>
 </head>
 <body>
 
-
-<marquee><div class="judul">Selamat Datang di Halaman Biodata</div></marquee>
-
+<marquee behavior="alternate" scrollamount="7">
+  <div class="judul">✨ Selamat Datang di Halaman Biodata ✨</div>
+</marquee>
 
 <div class="biodata">
-<div style="margin:20px;">
-<pre class="textbiodata">
-Nama           : Muhammad Athaya Al Barraa
-Nama Panggilan : Barraa
-Jenis Kelamin  : Pria
-Umur           : 17 Tahun
-Agama          : Islam
-Pekerjaan      : Siswa
-Nomor Telepon  : 081213971231
-Email          : athayabara1@gmail.com
-</pre>
+  <table class="textbiodata">
+    <tr><td><b>Nama</b></td><td>: Muhammad Athaya Al Barraa</td></tr>
+    <tr><td><b>Nama Panggilan</b></td><td>: Barraa</td></tr>
+    <tr><td><b>Jenis Kelamin</b></td><td>: Pria</td></tr>
+    <tr><td><b>Umur</b></td><td>: 17 Tahun</td></tr>
+    <tr><td><b>Agama</b></td><td>: Islam</td></tr>
+    <tr><td><b>Pekerjaan</b></td><td>: Siswa</td></tr>
+    <tr><td><b>Nomor Telepon</b></td><td>: 081213971231</td></tr>
+    <tr><td><b>Email</b></td><td>: athayabara1@gmail.com</td></tr>
+  </table>
 </div>
-</div
 
-
-<br><br>
 <div class="link">
-<div class="nav">
-<p><a href="index.html">Pergi ke halaman Home</a></p>
-<p><a href="Hobi.html">Pergi ke halaman Hobi</a></p>
-<p><a href="Galeri.html">Pergi ke halaman Galeri</a></p>
+  <div class="nav">
+    <p><a href="index.html">Pergi ke halaman Home</a></p>
+    <p><a href="Hobi.html">Pergi ke halaman Hobi</a></p>
+    <p><a href="Galeri.html">Pergi ke halaman Galeri</a></p>
+  </div>
 </div>
-</div>
-<br><br>
 
 <audio id="bgm" src="ProiProi.mp3" loop></audio>
 <button onclick="document.getElementById('bgm').play()">Start Musik</button>
 
 </body>
 </html>
-
-
+ 
