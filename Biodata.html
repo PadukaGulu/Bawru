@@ -45,6 +45,10 @@
         box-shadow: 0 0 15px black;
         backdrop-filter: blur(5px);
         animation: muncul 1s ease;
+
+        flex: 1 1 60%;
+        min-width: 200px;
+}
     }
 
     @keyframes muncul {
@@ -105,6 +109,14 @@
       from { color: cyan; }
       to   { color: magenta; }
     }
+    .foto {
+       flex: 0 0 30%;
+       max-width: 177px;
+       aspect-ratio: 9/16;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-right: 20px;
+}
 
 </style>
 </head>
@@ -115,6 +127,9 @@
 </marquee>
 
 <div class="biodata">
+    <img src="saya.jpg" class="foto">
+    <img src="saya2.jpg" class="foto">
+    <img src="saya3.jpg" class="foto">
   <table class="textbiodata">
     <tr><td><b>Nama</b></td><td>: Muhammad Athaya Al Barraa</td></tr>
     <tr><td><b>Nama Panggilan</b></td><td>: Barraa</td></tr>
@@ -129,7 +144,7 @@
 
 <div class="link">
   <div class="nav">
-    <p><a href="index.html">Pergi ke halaman Home</a></p>
+    <p><a href="Home.html">Pergi ke halaman Home</a></p>
     <p><a href="Hobi.html">Pergi ke halaman Hobi</a></p>
     <p><a href="Galeri.html">Pergi ke halaman Galeri</a></p>
   </div>
