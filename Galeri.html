@@ -1,27 +1,152 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Punya Barraa</title>
+<title>Punya Barraa - Galeri</title>
+<style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: url("VOG2.jpg") no-repeat center center;
+      background-size: 200%;
+      background-position: center center;
+      padding-bottom: 180px;
+
+    button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    .box {
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 1000px;
+        margin: 20px auto;
+        box-shadow: 0 0 15px black;
+        backdrop-filter: blur(5px);
+        animation: muncul 1s ease;
+
+        flex: 1 1 60%;
+        min-width: 200px;
+    }
+
+    @keyframes muncul {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+
+    .link {
+        background: rgba(0,0,0,0.6);
+        padding: 15px 20px;
+        border-radius: 12px;
+        width: auto;         
+        max-width: 250px;  
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        margin: 0;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+    }
+
+    .nav {
+        margin: 0;
+        font-size: 18px;
+        font-family: Consolas, monospace;
+        line-height: 1.6; 
+    }
+
+    .nav a {
+        color: cyan;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .nav a:hover {
+        text-decoration: underline;
+        color: #00ffff; 
+    }
+
+    .judul {
+       font-size: 38px;
+       font-family: Consolas, monospace;
+       animation: warna 2s infinite alternate;
+    }
+
+    @keyframes warna {
+      from { color: cyan; }
+      to   { color: magenta; }
+    }
+    .fotoV {
+       flex: 0 0 30%;
+       max-width: 177px;
+       aspect-ratio: 9/16;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-right: 19px;
+       margin-bottom: 20px;
+}
+    .fotoH {
+       flex: 0 0 30%;
+       max-width: 300px;
+       aspect-ratio: 16/9;
+       object-fit: cover;
+       border-radius: 10px;
+       margin-right: 20px;
+       margin-bottom: 20px;
+}
+
+</style>
 </head>
-</html>
-
 <body>
-<marquee><font size="20">>Selamat Datang di Halaman Galeri</font size="20"></marquee>
+
+<marquee behavior="alternate" scrollamount="7">
+
+</marquee>
+
+<div class="box">
+
+    <img src="G3.jpg" class="fotoV">
+    <img src="G4.jpg" class="fotoV">
+    <img src="G5.jpg" class="fotoV">
+    <img src="G6.jpg" class="fotoV">
+    <img src="G7.jpg" class="fotoV">
+    <img src="G9.jpg" class="fotoV">
+    <img src="G1.jpg" class="fotoH">
+    <img src="G2.jpg" class="fotoH">
+    <img src="G8.jpg" class="fotoH">
+    <img src="G10.jpg" class="fotoH">
+    <img src="G11.jpg" class="fotoH">
 
 
 
+</div>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Home</font size="5">
-<br>
-<font size="4"><a href="index.html">Pergi ke halaman Home</a></font size="4">
+<div class="link">
+  <div class="nav">
+    <p><a href="index.html">Pergi ke halaman Home</a></p>
+    <p><a href="Hobi.html">Pergi ke halaman Hobi</a></p>
+    <p><a href="Biodata.html">Pergi ke halaman Biodata</a></p>
+  </div>
+</div>
 
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Biodata</font size="5">
-<br>
-<font size="4"><a href="Biodata.html">Pergi ke halaman Biodata</a></font size="4">
-
-<br><font size="5">Tekan tombol dibawah untuk pergi ke halaman Hobi</font size="5">
-<br>
-<font size="4"><a href="Hobi.html">Pergi ke halaman Hobi</a></font size="4">
+<audio id="bgm" src="Hope.mp3" loop></audio>
+<button onclick="document.getElementById('bgm').play()">Start Musik</button>
 
 </body>
 </html>
-
+ 
